@@ -20,6 +20,9 @@ jobs:
   test:
     timeout-minutes: 45
     runs-on: ubuntu-latest
+    env:
+      HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID}}
+      HABITICA_API_KEY: ${{ secrets.HABITICA_API_KEY }}
 
     steps:
       - name: Setup repo
