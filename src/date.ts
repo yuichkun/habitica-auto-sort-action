@@ -1,4 +1,4 @@
-import { HabiticaTask } from "./types";
+import { HabiticaTask } from "./types.ts";
 
 export function sortByDate(a: HabiticaTask, b: HabiticaTask) {
   if (a.date && b.date) {
